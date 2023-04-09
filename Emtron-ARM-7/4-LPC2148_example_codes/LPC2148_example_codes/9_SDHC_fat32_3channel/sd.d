@@ -1,0 +1,11 @@
+sd.o: sd.c
+sd.o: C:\Keil\ARM\RV31\INC\stdio.h
+sd.o: types.h
+sd.o: config.h
+sd.o: type.h
+sd.o: ssp.h
+sd.o: sd.h
+sd.o: C:\Keil\ARM\INC\Philips\LPC214X.h
+sd.o: debug.h
+sd.o: lpc2000_spi.h
+sd.o: Serial.h

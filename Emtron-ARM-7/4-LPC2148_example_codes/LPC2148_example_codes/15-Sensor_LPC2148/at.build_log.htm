@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: r r, r, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARM.DLL V5.17
+Dialog DLL:      DARMP.DLL V1.51
+Target DLL:      UL2ARM.DLL V1.74.7.0
+Dialog DLL:      TARMP.DLL V1.51
+ 
+<h2>Project:</h2>
+C:\Users\spit-vlsi\Desktop\Sensor_LPC2148\at.uvproj
+Project File Date:  08/03/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling gsmAT.c...
+gsmAT.c(12): warning:  #177-D: variable "buf" was declared but never referenced
+    	unsigned char buf[16] = {0};
+gsmAT.c(25): warning:  #177-D: variable "buffer" was declared but never referenced
+  	unsigned char buffer[16];
+gsmAT.c(26): warning:  #177-D: variable "buf" was declared but never referenced
+  	unsigned char buf[16] = {0};
+gsmAT.c: 3 warnings, 0 errors
+compiling lcd.c...
+assembling Startup.s...
+compiling adc.c...
+linking...
+Program Size: Code=2228 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\at.axf" - 0 Error(s), 3 Warning(s).
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

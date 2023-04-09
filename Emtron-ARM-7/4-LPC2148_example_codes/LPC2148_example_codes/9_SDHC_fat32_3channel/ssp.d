@@ -1,0 +1,10 @@
+ssp.o: ssp.c
+ssp.o: C:\Keil\ARM\INC\Philips\LPC214x.H
+ssp.o: type.h
+ssp.o: sd.h
+ssp.o: config.h
+ssp.o: types.h
+ssp.o: debug.h
+ssp.o: lpc2000_spi.h
+ssp.o: utils.h
+ssp.o: ssp.h

@@ -1,0 +1,11 @@
+fat.o: FAT.c
+fat.o: C:\Keil\ARM\INC\Philips\LPC214X.h
+fat.o: C:\Keil\ARM\RV31\INC\stdio.h
+fat.o: type.h
+fat.o: Serial.h
+fat.o: FAT.h
+fat.o: FAT32.c
+fat.o: FAT32.h
+fat.o: FAT16.c
+fat.o: Serial.h
+fat.o: FAT16.h

@@ -1,0 +1,16 @@
+main2.o: main2.c
+main2.o: C:\Keil\ARM\INC\Philips\LPC214x.H
+main2.o: C:\Keil\ARM\RV31\INC\stdio.h
+main2.o: type.h
+main2.o: Serial.h
+main2.o: ssp.h
+main2.o: rtc.h
+main2.o: RTC.c
+main2.o: sd.h
+main2.o: config.h
+main2.o: types.h
+main2.o: debug.h
+main2.o: lpc2000_spi.h
+main2.o: utils.h
+main2.o: lcd.h
+main2.o: FAT.h

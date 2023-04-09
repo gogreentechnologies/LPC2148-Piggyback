@@ -1,0 +1,4 @@
+--device DARMP "retarget.o" "sd.o" "ssp.o" "startup.o" "serial.o" "fat.o" "adc.o" "main2.o" --strict --scatter "sd_Card.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\sd_Card.map" -o "sd_Card.axf"

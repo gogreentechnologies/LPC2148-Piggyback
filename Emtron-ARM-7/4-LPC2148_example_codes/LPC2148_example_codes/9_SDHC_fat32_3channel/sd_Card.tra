@@ -1,0 +1,26 @@
+*** Creating Trace Output File 'sd_Card.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"retarget.o"'
+### List of Objects: adding '"sd.o"'
+### List of Objects: adding '"ssp.o"'
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"serial.o"'
+### List of Objects: adding '"fat.o"'
+### List of Objects: adding '"adc.o"'
+### List of Objects: adding '"main2.o"'
+### ADS-LD Command completed:
+--device DARMP "retarget.o" "sd.o" "ssp.o" "startup.o" "serial.o" "fat.o" "adc.o" "main2.o" --strict --scatter "sd_Card.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\sd_Card.map" -o "sd_Card.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'sd_Card.axf'
+### ADS-LD Command File: 'sd_Card.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'sd_Card.lnp', Handle=0x000004D4
+### Writing '.lnp' file
+### ADS-LD Command file 'sd_Card.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

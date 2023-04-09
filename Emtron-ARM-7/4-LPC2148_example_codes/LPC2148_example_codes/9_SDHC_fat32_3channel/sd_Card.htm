@@ -1,0 +1,1214 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [F:\Passport\4_SW-Latest\Embedded_SW\ARM\2012_Bhavin_Solar_logger_fat32_3channel\sd_Card.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image F:\Passport\4_SW-Latest\Embedded_SW\ARM\2012_Bhavin_Solar_logger_fat32_3channel\sd_Card.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 524]: Last Updated: Wed Sep 16 19:57:04 2015
+<BR><P>
+<H3>Maximum Stack Usage =        968 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; writeFile &rArr; F32_writeFile &rArr; uart0_dump &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[6ad81c]">Reset_Handler</a>
+ <LI><a href="#[6ad858]">__user_initial_stackheap</a>
+ <LI><a href="#[6ada74]">Undef_Handler</a>
+ <LI><a href="#[6ada38]">SWI_Handler</a>
+ <LI><a href="#[6ad9fc]">PAbt_Handler</a>
+ <LI><a href="#[6ad9c0]">DAbt_Handler</a>
+ <LI><a href="#[6ad984]">IRQ_Handler</a>
+ <LI><a href="#[6ad948]">FIQ_Handler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[6ada74]">Undef_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6ada74]">Undef_Handler</a><BR>
+ <LI><a href="#[6ada38]">SWI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6ada38]">SWI_Handler</a><BR>
+ <LI><a href="#[6ad9fc]">PAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6ad9fc]">PAbt_Handler</a><BR>
+ <LI><a href="#[6ad9c0]">DAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6ad9c0]">DAbt_Handler</a><BR>
+ <LI><a href="#[6ad984]">IRQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6ad984]">IRQ_Handler</a><BR>
+ <LI><a href="#[6ad948]">FIQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6ad948]">FIQ_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[6ad81c]">Reset_Handler</a>
+ <LI><a href="#[6ada74]">Undef_Handler</a>
+ <LI><a href="#[6ada38]">SWI_Handler</a>
+ <LI><a href="#[6ad9fc]">PAbt_Handler</a>
+ <LI><a href="#[6ad9c0]">DAbt_Handler</a>
+ <LI><a href="#[6ad984]">IRQ_Handler</a>
+ <LI><a href="#[6ad948]">FIQ_Handler</a>
+ <LI><a href="#[6a75ac]">__main</a>
+ <LI><a href="#[6aae64]">main</a>
+ <LI><a href="#[6a5e78]">_sputc</a>
+ <LI><a href="#[6a5fe0]">_printf_input_char</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[6ad81c]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6a75ac]"></a>__main</STRONG> (ARM, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[6a6904]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[2341430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[2341430]"></a>__scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[6a75ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[23413f4]"></a>__scatterload_rt2</STRONG> (ARM, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a6904]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[23413b8]"></a>__scatterload_null</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[2341214]"></a>__scatterload_copy</STRONG> (ARM, 40 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2341214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2341214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[2341124]"></a>__scatterload_zeroinit</STRONG> (ARM, 44 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[6a8740]"></a>_printf_f</STRONG> (ARM, 0 bytes, Stack size unknown bytes, _printf_f.o(.ARM.Collect$$_printf_percent$$00000003))
+<BR><BR>[Stack]<UL><LI>Max Depth = 320 + Unknown Stack Size
+<LI>Call Chain = _printf_f &rArr; _printf_fp_dec &rArr; _printf_fp_dec_real &rArr; _fp_digits &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a69f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec
+</UL>
+
+<P><STRONG><a name="[6a868c]"></a>_printf_percent</STRONG> (ARM, 0 bytes, Stack size unknown bytes, _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[6a8ce0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a87f4]"></a>_printf_d</STRONG> (ARM, 0 bytes, Stack size unknown bytes, _printf_d.o(.ARM.Collect$$_printf_percent$$00000009))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
+<LI>Call Chain = _printf_d &rArr; _printf_int_dec &rArr; _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a88e4]"></a>_printf_x</STRONG> (ARM, 0 bytes, Stack size unknown bytes, _printf_x.o(.ARM.Collect$$_printf_percent$$0000000C))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
+<LI>Call Chain = _printf_x &rArr; _printf_int_hex &rArr; _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a9eb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_hex (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a89d4]"></a>_printf_c</STRONG> (ARM, 0 bytes, Stack size unknown bytes, _printf_c.o(.ARM.Collect$$_printf_percent$$00000013))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = _printf_c &rArr; _printf_char &rArr; _printf_cs_common &rArr; _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a5d4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a5c20]"></a>_printf_percent_end</STRONG> (ARM, 0 bytes, Stack size unknown bytes, _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017))
+
+<P><STRONG><a name="[6a2908]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Calls]<UL><LI><a href="#[2343f14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a4f3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a1990]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
+
+<P><STRONG><a name="[6a1864]"></a>__rt_lib_init_lc_common</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000B))
+<BR><BR>[Calls]<UL><LI><a href="#[6a48ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_locale (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a18a0]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[6a1918]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+
+<P><STRONG><a name="[6a17ec]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
+
+<P><STRONG><a name="[6a1774]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+
+<P><STRONG><a name="[6a16fc]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[6a16c0]"></a>__rt_lib_init_lc_numeric_2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000012))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init_lc_numeric_2 &rArr; _get_lc_numeric &rArr; strcmp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a3808]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_numeric (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a115c]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+
+<P><STRONG><a name="[6a11d4]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000028))
+
+<P><STRONG><a name="[6a1594]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[6a142c]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[6a106c]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[6a10e4]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[6a14a4]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[6a13b4]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[6a1684]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[6a160c]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[6a1030]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002F))
+
+<P><STRONG><a name="[6a151c]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[6a133c]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[23428d0]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[2343d34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2341994]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+
+<P><STRONG><a name="[23417b4]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[2341778]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[23418e0]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[2341a48]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+
+<P><STRONG><a name="[2341868]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+
+<P><STRONG><a name="[6a6904]"></a>__rt_entry</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[6a75ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[23413f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+</UL>
+
+<P><STRONG><a name="[6a4ff0]"></a>__rt_entry_presh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[6a4c6c]"></a>__rt_entry_sh</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a3100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[6a4f3c]"></a>__rt_entry_li</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[6a2908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a4f78]"></a>__rt_entry_postsh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[6a4e88]"></a>__rt_entry_main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Calls]<UL><LI><a href="#[6a2f98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via BX)
+</UL>
+
+<P><STRONG><a name="[6a4ec4]"></a>__rt_entry_postli_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[23445e0]"></a>__rt_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[6a2f98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2343d34]"></a>__rt_exit_ls</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[23428d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2343d70]"></a>__rt_exit_prels_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[2343cf8]"></a>__rt_exit_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[6af5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[6af5e0]"></a>_sys_exit</STRONG> (ARM, 8 bytes, Stack size 0 bytes, retarget.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2343cf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[6ae794]"></a>sd_Command</STRONG> (ARM, 112 bytes, Stack size 16 bytes, sd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = sd_Command
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae44c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spiSendRcv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ae578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_getDriveSize
+<LI><a href="#[6ae5b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_setReadLen
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+<LI><a href="#[6ae62c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_writeSector
+<LI><a href="#[6ae668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_State
+<LI><a href="#[6ae71c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdInit
+</UL>
+
+<P><STRONG><a name="[6ae758]"></a>sd_Resp8b</STRONG> (ARM, 92 bytes, Stack size 16 bytes, sd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae44c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spiSendRcv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ae5b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_setReadLen
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+<LI><a href="#[6ae62c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_writeSector
+<LI><a href="#[6ae6e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp16b
+<LI><a href="#[6ae71c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdInit
+</UL>
+
+<P><STRONG><a name="[6ae71c]"></a>sdInit</STRONG> (ARM, 632 bytes, Stack size 24 bytes, sd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = sdInit &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae44c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spiSendRcv
+<LI><a href="#[6ae758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8b
+<LI><a href="#[6ae794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Command
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aaea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_sd_card
+</UL>
+
+<P><STRONG><a name="[6ae6e0]"></a>sd_Resp16b</STRONG> (ARM, 68 bytes, Stack size 16 bytes, sd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ae44c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spiSendRcv
+<LI><a href="#[6ae758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8b
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ae668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_State
+</UL>
+
+<P><STRONG><a name="[6ae6a4]"></a>sd_Resp8bError</STRONG> (ARM, 208 bytes, Stack size 8 bytes, sd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = sd_Resp8bError &rArr; uart0_puts
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+<LI><a href="#[6ae668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_State
+</UL>
+
+<P><STRONG><a name="[6ae668]"></a>sd_State</STRONG> (ARM, 476 bytes, Stack size 8 bytes, sd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ae6a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8bError
+<LI><a href="#[6ae6e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp16b
+<LI><a href="#[6ae794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Command
+</UL>
+
+<P><STRONG><a name="[6ae62c]"></a>sd_writeSector</STRONG> (ARM, 328 bytes, Stack size 48 bytes, sd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = sd_writeSector &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae44c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spiSendRcv
+<LI><a href="#[6ae758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8b
+<LI><a href="#[6ae794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Command
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6abf44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeTest
+<LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+<LI><a href="#[6ac37c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFAT
+</UL>
+
+<P><STRONG><a name="[6ae5f0]"></a>sd_readSector</STRONG> (ARM, 392 bytes, Stack size 48 bytes, sd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = sd_readSector &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae44c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spiSendRcv
+<LI><a href="#[6ae6a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8bError
+<LI><a href="#[6ae758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8b
+<LI><a href="#[6ae794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Command
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6abf44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeTest
+<LI><a href="#[6ac0e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBSData
+<LI><a href="#[6ac160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_readFile
+<LI><a href="#[6ac19c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getNextCluster
+<LI><a href="#[6ac1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getClusterNumber
+<LI><a href="#[6ac250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getDirStruct
+<LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+<LI><a href="#[6ac37c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFAT
+<LI><a href="#[6ac3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_readFile
+<LI><a href="#[6ac430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFreeCluster
+<LI><a href="#[6ac46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getNextCluster
+<LI><a href="#[6ac4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getClusterNumber
+<LI><a href="#[6ac4e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getDirStruct
+</UL>
+
+<P><STRONG><a name="[6ae5b4]"></a>sd_setReadLen</STRONG> (ARM, 104 bytes, Stack size 16 bytes, sd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = sd_setReadLen &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8b
+<LI><a href="#[6ae794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Command
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ae578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_getDriveSize
+</UL>
+
+<P><STRONG><a name="[6ae578]"></a>sd_getDriveSize</STRONG> (ARM, 528 bytes, Stack size 64 bytes, sd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = sd_getDriveSize &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf (via Veneer)
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae44c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spiSendRcv
+<LI><a href="#[6ae5b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_setReadLen
+<LI><a href="#[6ae794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Command
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6addbc]"></a>spi1_init</STRONG> (ARM, 160 bytes, Stack size 0 bytes, ssp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6add80]"></a>spi1_send</STRONG> (ARM, 96 bytes, Stack size 4 bytes, ssp.o(.text), UNUSED)
+
+<P><STRONG><a name="[6add44]"></a>spi1_receive</STRONG> (ARM, 92 bytes, Stack size 0 bytes, ssp.o(.text), UNUSED)
+
+<P><STRONG><a name="[6ae44c]"></a>spiSendRcv</STRONG> (ARM, 72 bytes, Stack size 0 bytes, ssp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6ae578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_getDriveSize
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+<LI><a href="#[6ae62c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_writeSector
+<LI><a href="#[6ae6e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp16b
+<LI><a href="#[6ae71c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdInit
+<LI><a href="#[6ae758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8b
+<LI><a href="#[6ae794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Command
+</UL>
+
+<P><STRONG><a name="[6ad858]"></a>__user_initial_stackheap</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a3100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[6ad420]"></a>sendchar</STRONG> (ARM, 80 bytes, Stack size 0 bytes, serial.o(.text), UNUSED)
+
+<P><STRONG><a name="[6ad3e4]"></a>uart0_getkey</STRONG> (ARM, 32 bytes, Stack size 0 bytes, serial.o(.text), UNUSED)
+
+<P><STRONG><a name="[6ad3a8]"></a>uart1_getkey</STRONG> (ARM, 32 bytes, Stack size 0 bytes, serial.o(.text), UNUSED)
+
+<P><STRONG><a name="[6ad36c]"></a>uart1_init</STRONG> (ARM, 68 bytes, Stack size 0 bytes, serial.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6ad330]"></a>uart1_putc</STRONG> (ARM, 32 bytes, Stack size 0 bytes, serial.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[6ad2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_puts
+</UL>
+
+<P><STRONG><a name="[6ad2f4]"></a>uart1_puts</STRONG> (ARM, 40 bytes, Stack size 4 bytes, serial.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ad330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_putc
+</UL>
+
+<P><STRONG><a name="[6ad2b8]"></a>uart0_init</STRONG> (ARM, 60 bytes, Stack size 0 bytes, serial.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6ad27c]"></a>uart0_putc</STRONG> (ARM, 32 bytes, Stack size 0 bytes, serial.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6ac0e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBSData
+<LI><a href="#[6ac160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_readFile
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+</UL>
+
+<P><STRONG><a name="[6ae410]"></a>uart0_puts</STRONG> (ARM, 40 bytes, Stack size 4 bytes, serial.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = uart0_puts
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ad27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_putc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[6aaea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_sd_card
+<LI><a href="#[6abf44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeTest
+<LI><a href="#[6ac0e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBSData
+<LI><a href="#[6ac1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getClusterNumber
+<LI><a href="#[6ac250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getDirStruct
+<LI><a href="#[6ac2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displaySize
+<LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+<LI><a href="#[6ad240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_dump
+<LI><a href="#[6ae578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_getDriveSize
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+<LI><a href="#[6ae62c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_writeSector
+<LI><a href="#[6ae6a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_Resp8bError
+</UL>
+
+<P><STRONG><a name="[6ad240]"></a>uart0_dump</STRONG> (ARM, 100 bytes, Stack size 24 bytes, serial.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = uart0_dump &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a8038]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+<LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf (via Veneer)
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6abf44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeTest
+<LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+</UL>
+
+<P><STRONG><a name="[6ac598]"></a>lstrncmp</STRONG> (ARM, 84 bytes, Stack size 4 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = lstrncmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getClusterNumber
+</UL>
+
+<P><STRONG><a name="[6ac55c]"></a>F32_getParameters</STRONG> (ARM, 244 bytes, Stack size 0 bytes, fat.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6ac0e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBSData
+</UL>
+
+<P><STRONG><a name="[6ac520]"></a>F32_getFirstSector</STRONG> (ARM, 32 bytes, Stack size 0 bytes, fat.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6abf44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeTest
+<LI><a href="#[6ac160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_readFile
+<LI><a href="#[6ac28c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFirstSector
+<LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+<LI><a href="#[6ac3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_readFile
+<LI><a href="#[6ac4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getClusterNumber
+<LI><a href="#[6ac4e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getDirStruct
+</UL>
+
+<P><STRONG><a name="[6ac4e4]"></a>F32_getDirStruct</STRONG> (ARM, 452 bytes, Stack size 48 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFirstSector
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac0ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDirStruct
+</UL>
+
+<P><STRONG><a name="[6ac4a8]"></a>F32_getClusterNumber</STRONG> (ARM, 708 bytes, Stack size 88 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = F32_getClusterNumber &rArr; sd_readSector &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ac520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFirstSector
+<LI><a href="#[6ac598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lstrncmp
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getClusterNumber
+<LI><a href="#[6ac160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_readFile
+<LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+<LI><a href="#[6ac3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_readFile
+</UL>
+
+<P><STRONG><a name="[6ac46c]"></a>F32_getNextCluster</STRONG> (ARM, 124 bytes, Stack size 16 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = F32_getNextCluster &rArr; sd_readSector &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNextCluster
+<LI><a href="#[6ac160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_readFile
+<LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+</UL>
+
+<P><STRONG><a name="[6ac430]"></a>F32_getFreeCluster</STRONG> (ARM, 216 bytes, Stack size 24 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = F32_getFreeCluster &rArr; sd_readSector &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6abff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFreeCluster
+<LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+</UL>
+
+<P><STRONG><a name="[6ac3f4]"></a>F32_readFile</STRONG> (ARM, 148 bytes, Stack size 40 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getClusterNumber
+<LI><a href="#[6ac520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFirstSector
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6abfbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFile
+</UL>
+
+<P><STRONG><a name="[6ac3b8]"></a>ascii2hex</STRONG> (ARM, 76 bytes, Stack size 0 bytes, fat.o(.text), UNUSED)
+
+<P><STRONG><a name="[6ac37c]"></a>F32_writeFAT</STRONG> (ARM, 172 bytes, Stack size 24 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = F32_writeFAT &rArr; sd_readSector &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+<LI><a href="#[6ae62c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_writeSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+</UL>
+
+<P><STRONG><a name="[6ac340]"></a>F32_writeFile</STRONG> (ARM, 2508 bytes, Stack size 592 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 752 + Unknown Stack Size
+<LI>Call Chain = F32_writeFile &rArr; uart0_dump &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ac37c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFAT
+<LI><a href="#[6ac430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFreeCluster
+<LI><a href="#[6ac46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getNextCluster
+<LI><a href="#[6ac4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getClusterNumber
+<LI><a href="#[6ac520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFirstSector
+<LI><a href="#[6ad240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_dump
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+<LI><a href="#[6ae62c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_writeSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6abf80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeFile
+</UL>
+
+<P><STRONG><a name="[6ac304]"></a>F16_getParameters</STRONG> (ARM, 152 bytes, Stack size 16 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = F16_getParameters &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a8038]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac0e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBSData
+</UL>
+
+<P><STRONG><a name="[6ac2c8]"></a>displaySize</STRONG> (ARM, 176 bytes, Stack size 40 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
+<LI>Call Chain = displaySize &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a6b5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfrcmple
+<LI><a href="#[6a6c88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[6a700c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[6a7318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf (via Veneer)
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[6ac250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getDirStruct
+</UL>
+
+<P><STRONG><a name="[6ac28c]"></a>getFirstSector</STRONG> (ARM, 44 bytes, Stack size 8 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFirstSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getClusterNumber
+<LI><a href="#[6ac250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getDirStruct
+</UL>
+
+<P><STRONG><a name="[6ac250]"></a>F16_getDirStruct</STRONG> (ARM, 416 bytes, Stack size 72 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf (via Veneer)
+<LI><a href="#[6ac28c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFirstSector
+<LI><a href="#[6ac2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displaySize
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac0ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDirStruct
+</UL>
+
+<P><STRONG><a name="[6ac214]"></a>F16_getFirstSector</STRONG> (ARM, 32 bytes, Stack size 0 bytes, fat.o(.text), UNUSED)
+
+<P><STRONG><a name="[6ac1d8]"></a>F16_getClusterNumber</STRONG> (ARM, 648 bytes, Stack size 104 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a8290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<LI><a href="#[6a8380]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen (via Veneer)
+<LI><a href="#[6a8470]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp (via Veneer)
+<LI><a href="#[6a8560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcspn (via Veneer)
+<LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf (via Veneer)
+<LI><a href="#[6ac28c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFirstSector
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+
+<P><STRONG><a name="[6ac19c]"></a>F16_getNextCluster</STRONG> (ARM, 124 bytes, Stack size 16 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+
+<P><STRONG><a name="[6ac160]"></a>F16_readFile</STRONG> (ARM, 256 bytes, Stack size 48 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getNextCluster
+<LI><a href="#[6ac4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getClusterNumber
+<LI><a href="#[6ac520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFirstSector
+<LI><a href="#[6ad27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_putc
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+
+<P><STRONG><a name="[6ac124]"></a>F16_ascii2hex</STRONG> (ARM, 76 bytes, Stack size 0 bytes, fat.o(.text), UNUSED)
+
+<P><STRONG><a name="[6ac0e8]"></a>getBSData</STRONG> (ARM, 460 bytes, Stack size 16 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = getBSData &rArr; sd_readSector &rArr; sd_Resp8b
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ac304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getParameters
+<LI><a href="#[6ac55c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getParameters
+<LI><a href="#[6ad27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_putc
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6ac0ac]"></a>getDirStruct</STRONG> (ARM, 64 bytes, Stack size 16 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getDirStruct
+<LI><a href="#[6ac4e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getDirStruct
+</UL>
+
+<P><STRONG><a name="[6ac070]"></a>getClusterNumber</STRONG> (ARM, 60 bytes, Stack size 16 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getClusterNumber
+</UL>
+
+<P><STRONG><a name="[6ac034]"></a>getNextCluster</STRONG> (ARM, 44 bytes, Stack size 8 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getNextCluster
+</UL>
+
+<P><STRONG><a name="[6abff8]"></a>getFreeCluster</STRONG> (ARM, 36 bytes, Stack size 8 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFreeCluster
+</UL>
+
+<P><STRONG><a name="[6abfbc]"></a>readFile</STRONG> (ARM, 100 bytes, Stack size 24 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_readFile
+</UL>
+
+<P><STRONG><a name="[6abf80]"></a>writeFile</STRONG> (ARM, 76 bytes, Stack size 32 bytes, fat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 784 + Unknown Stack Size
+<LI>Call Chain = writeFile &rArr; F32_writeFile &rArr; uart0_dump &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6ac340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_writeFile
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6abf44]"></a>writeTest</STRONG> (ARM, 88 bytes, Stack size 8 bytes, fat.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6ac520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F32_getFirstSector
+<LI><a href="#[6ad240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_dump
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_readSector
+<LI><a href="#[6ae62c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_writeSector
+</UL>
+
+<P><STRONG><a name="[6ab7c4]"></a>init_adc0</STRONG> (ARM, 108 bytes, Stack size 0 bytes, adc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6ab788]"></a>init_adc1</STRONG> (ARM, 4 bytes, Stack size 0 bytes, adc.o(.text), UNUSED)
+
+<P><STRONG><a name="[6ab74c]"></a>adc_read</STRONG> (ARM, 180 bytes, Stack size 0 bytes, adc.o(.text), UNUSED)
+
+<P><STRONG><a name="[6aaf18]"></a>rtc_init</STRONG> (ARM, 68 bytes, Stack size 0 bytes, main2.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6aaedc]"></a>delay</STRONG> (ARM, 52 bytes, Stack size 0 bytes, main2.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6aaea0]"></a>test_sd_card</STRONG> (ARM, 116 bytes, Stack size 8 bytes, main2.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
+<LI>Call Chain = test_sd_card &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf (via Veneer)
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae71c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6aae64]"></a>main</STRONG> (ARM, 780 bytes, Stack size 184 bytes, main2.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 968 + Unknown Stack Size
+<LI>Call Chain = main &rArr; writeFile &rArr; F32_writeFile &rArr; uart0_dump &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf (via Veneer)
+<LI><a href="#[6aaea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_sd_card
+<LI><a href="#[6aaedc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+<LI><a href="#[6aaf18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_init
+<LI><a href="#[6ab7c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_adc0
+<LI><a href="#[6abf80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeFile
+<LI><a href="#[6ac0e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBSData
+<LI><a href="#[6ac2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displaySize
+<LI><a href="#[6ad2b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_init
+<LI><a href="#[6ad36c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_init
+<LI><a href="#[6addbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi1_init
+<LI><a href="#[6ae410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[6ae578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_getDriveSize
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+</UL>
+<P><STRONG><a name="[6aabd0]"></a>__I$use$semihosting</STRONG> (ARM, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[6aab94]"></a>__use_no_semihosting_swi</STRONG> (ARM, 4 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[6aa93c]"></a>__2sprintf</STRONG> (Thumb, 36 bytes, Stack size 32 bytes, noretval__2sprintf.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136 + Unknown Stack Size
+<LI>Call Chain = __2sprintf &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a5e78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
+<LI><a href="#[6a5fa4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aae64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+<LI><a href="#[6aaea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_sd_card (via Veneer)
+<LI><a href="#[6ac1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getClusterNumber (via Veneer)
+<LI><a href="#[6ac250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getDirStruct (via Veneer)
+<LI><a href="#[6ac2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displaySize (via Veneer)
+<LI><a href="#[6ad240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_dump (via Veneer)
+<LI><a href="#[6ae578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_getDriveSize (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6aa5f4]"></a>_printf_pre_padding</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, _printf_pad.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _printf_pre_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa6e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a4690]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
+<LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
+<LI><a href="#[6a6490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<LI><a href="#[6aa4c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+</UL>
+
+<P><STRONG><a name="[6aa5b8]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, _printf_pad.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa6e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a4690]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
+<LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
+<LI><a href="#[6a6490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<LI><a href="#[6aa4c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+</UL>
+
+<P><STRONG><a name="[6aa4c8]"></a>_printf_str</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, _printf_str.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa5b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[6aa5f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[6aa6e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a5d88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+
+<P><STRONG><a name="[6aa360]"></a>_printf_int_dec</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, _printf_dec.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = _printf_int_dec &rArr; _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a5b30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_udiv10 (via Veneer)
+<LI><a href="#[6a6490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<LI><a href="#[6aa270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_truncate_unsigned (Weak Reference)
+<LI><a href="#[6aa2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_truncate_signed (Weak Reference)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a87f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_d (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a9eb0]"></a>_printf_int_hex</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, _printf_hex_int.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _printf_int_hex &rArr; _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a6490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<LI><a href="#[6aa270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_truncate_unsigned (Weak Reference)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a88e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_x (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a9e74]"></a>_printf_longlong_hex</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, _printf_hex_int.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a8ce0]"></a>__printf</STRONG> (Thumb, 332 bytes, Stack size 32 bytes, __printf_flags_wp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
+<LI>Call Chain = __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a868c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_percent (via Veneer)
+<LI><a href="#[6aa6e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r2
+<LI><a href="#[6aa720]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a5fa4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
+</UL>
+
+<P><STRONG><a name="[6a8560]"></a>strcspn</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, strcspn.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[6ac1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getClusterNumber (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a8470]"></a>strncmp</STRONG> (Thumb, 146 bytes, Stack size 16 bytes, strncmp.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[6ac1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getClusterNumber (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a8380]"></a>strlen</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, strlen.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[6ac1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getClusterNumber (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a8290]"></a>strcmp</STRONG> (ARM, 156 bytes, Stack size 4 bytes, strcmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = strcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a3808]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_numeric
+<LI><a href="#[6ac1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getClusterNumber
+</UL>
+
+<P><STRONG><a name="[6a8074]"></a>__aeabi_idiv</STRONG> (ARM, 0 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a8038]"></a>__aeabi_idivmod</STRONG> (ARM, 384 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a4294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento (via Veneer)
+<LI><a href="#[6ac304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;F16_getParameters
+<LI><a href="#[6ad240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_dump
+</UL>
+
+<P><STRONG><a name="[6a7714]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a76d8]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a769c]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a6490]"></a>_printf_int_common</STRONG> (Thumb, 182 bytes, Stack size 40 bytes, _printf_intcommon.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa5b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[6aa5f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[6aa6e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a9eb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_hex
+<LI><a href="#[6aa360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
+</UL>
+
+<P><STRONG><a name="[6a6364]"></a>__lib_sel_fp_printf</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, _printf_fp_dec.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a6328]"></a>_printf_fp_dec_real</STRONG> (Thumb, 616 bytes, Stack size 104 bytes, _printf_fp_dec.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 320<LI>Call Chain = _printf_fp_dec_real &rArr; _fp_digits &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a340c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_fpclassify (via Veneer)
+<LI><a href="#[6a4690]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
+<LI><a href="#[6a48ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_locale (via Veneer)
+<LI><a href="#[6a5b30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_udiv10 (via Veneer)
+<LI><a href="#[6a63a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[6aa5b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[6aa5f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[6aa6e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a69f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a5fa4]"></a>_printf_char_common</STRONG> (Thumb, 38 bytes, Stack size 72 bytes, _printf_char_common.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a8ce0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+</UL>
+
+<P><STRONG><a name="[6a5e78]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, _sputc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6aa93c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> noretval__2sprintf.o(.text)
+</UL>
+<P><STRONG><a name="[6a5d88]"></a>_printf_cs_common</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, _printf_char.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _printf_cs_common &rArr; _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a5cd4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_mbtowc (Weak Reference)
+<LI><a href="#[6aa4c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a5d10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_string
+<LI><a href="#[6a5d4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char
+</UL>
+
+<P><STRONG><a name="[6a5d4c]"></a>_printf_char</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, _printf_char.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _printf_char &rArr; _printf_cs_common &rArr; _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a5d88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a89d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_c (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a5d10]"></a>_printf_string</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, _printf_char.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a5d88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+
+<P><STRONG><a name="[6a5b30]"></a>__rt_udiv10</STRONG> (ARM, 44 bytes, Stack size 0 bytes, rtudiv10.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real (via Veneer)
+<LI><a href="#[6aa360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a48ac]"></a>__rt_locale</STRONG> (ARM, 16 bytes, Stack size 0 bytes, rt_locale_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a1864]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_lc_common (via Veneer)
+<LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a4780]"></a>_ll_udiv10</STRONG> (ARM, 160 bytes, Stack size 12 bytes, lludiv10.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = _ll_udiv10
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a63a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a4690]"></a>_printf_fp_infnan</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, _printf_fp_infnan.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _printf_fp_infnan &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6aa5b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[6aa5f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[6aa6e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
+</UL>
+
+<P><STRONG><a name="[6a4294]"></a>_btod_etento</STRONG> (Thumb, 196 bytes, Stack size 72 bytes, bigflt0.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = _btod_etento &rArr; _btod_emul &rArr; _e2e
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a3b14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emul (via Veneer)
+<LI><a href="#[6a3b8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_ediv (via Veneer)
+<LI><a href="#[6a8038]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a63a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[6a3268]"></a>__user_libspace</STRONG> (ARM, 12 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a322c]"></a>__user_perproc_libspace</STRONG> (ARM, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a3100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[6a31f0]"></a>__user_perthread_libspace</STRONG> (ARM, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a3100]"></a>__user_setup_stackheap</STRONG> (ARM, 96 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a322c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<LI><a href="#[6ad858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a4c6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[6a2f98]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[6a2f20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_call_atexit_fns (Weak Reference)
+<LI><a href="#[23445e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a4e88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[6a3cf4]"></a>_btod_d2e</STRONG> (ARM, 56 bytes, Stack size 0 bytes, btod.o(CL$$btod_d2e))
+<BR><BR>[Calls]<UL><LI><a href="#[6a3c7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2e_norm_op1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a63a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a3cb8]"></a>_d2e_denorm_low</STRONG> (ARM, 84 bytes, Stack size 0 bytes, btod.o(CL$$btod_d2e_denorm_low))
+<BR><BR>[Called By]<UL><LI><a href="#[6a3c7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2e_norm_op1
+</UL>
+
+<P><STRONG><a name="[6a3c7c]"></a>_d2e_norm_op1</STRONG> (ARM, 104 bytes, Stack size 0 bytes, btod.o(CL$$btod_d2e_norm_op1))
+<BR><BR>[Calls]<UL><LI><a href="#[6a3cb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2e_denorm_low
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a3cf4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_d2e
+</UL>
+
+<P><STRONG><a name="[6a3c40]"></a>__btod_div_common</STRONG> (ARM, 716 bytes, Stack size 24 bytes, btod.o(CL$$btod_div_common))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __btod_div_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a3b8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_ediv
+</UL>
+
+<P><STRONG><a name="[6a3bc8]"></a>_e2e</STRONG> (ARM, 220 bytes, Stack size 24 bytes, btod.o(CL$$btod_e2e))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = _e2e
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a3b14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emul
+<LI><a href="#[6a3b8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_ediv
+</UL>
+
+<P><STRONG><a name="[6a3b8c]"></a>_btod_ediv</STRONG> (ARM, 52 bytes, Stack size 24 bytes, btod.o(CL$$btod_ediv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = _btod_ediv &rArr; _e2e
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a3bc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_e2e
+<LI><a href="#[6a3c40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__btod_div_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a4294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento (via Veneer)
+<LI><a href="#[6a63a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a3b14]"></a>_btod_emul</STRONG> (ARM, 52 bytes, Stack size 24 bytes, btod.o(CL$$btod_emul))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = _btod_emul &rArr; _e2e
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a3a9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__btod_mult_common
+<LI><a href="#[6a3bc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_e2e
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a4294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento (via Veneer)
+<LI><a href="#[6a63a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a3a9c]"></a>__btod_mult_common</STRONG> (ARM, 616 bytes, Stack size 16 bytes, btod.o(CL$$btod_mult_common))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __btod_mult_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a3b14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emul
+</UL>
+
+<P><STRONG><a name="[6aa720]"></a>__ARM_common_call_via_r1</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, __printf.o(i.__ARM_common_call_via_r1))
+<BR><BR>[Called By]<UL><LI><a href="#[6a8ce0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+</UL>
+
+<P><STRONG><a name="[6aa6e4]"></a>__ARM_common_call_via_r2</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, __printf.o(i.__ARM_common_call_via_r2))
+<BR><BR>[Called By]<UL><LI><a href="#[6a4690]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
+<LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
+<LI><a href="#[6a6490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<LI><a href="#[6a8ce0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+<LI><a href="#[6aa4c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+<LI><a href="#[6aa5b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[6aa5f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+</UL>
+
+<P><STRONG><a name="[6a340c]"></a>__ARM_fpclassify</STRONG> (ARM, 44 bytes, Stack size 0 bytes, fpclassify.o(i.__ARM_fpclassify))
+<BR><BR>[Called By]<UL><LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a3808]"></a>_get_lc_numeric</STRONG> (ARM, 80 bytes, Stack size 8 bytes, lc_numeric_c.o(locale$$code))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = _get_lc_numeric &rArr; strcmp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a8290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a16c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_lc_numeric_2 (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a55cc]"></a>__fpl_fcmp_InfNaN</STRONG> (ARM, 100 bytes, Stack size 0 bytes, fcmpin.o(x$fpl$dcmpinfnan), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a34fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_cmpreturn
+<LI><a href="#[6a57e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcheck_NaN2
+<LI><a href="#[6a71b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_infinity (Weak Reference)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a6b20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_frcmple
+</UL>
+
+<P><STRONG><a name="[6a5590]"></a>__fpl_inf_fcmp</STRONG> (ARM, 0 bytes, Stack size unknown bytes, fcmpin.o(x$fpl$dcmpinfnan), UNUSED)
+
+<P><STRONG><a name="[6a59c8]"></a>__aeabi_i2d</STRONG> (ARM, 0 bytes, Stack size 0 bytes, dflt_noclz.o(x$fpl$dflt), UNUSED)
+
+<P><STRONG><a name="[6a598c]"></a>_dflt</STRONG> (ARM, 88 bytes, Stack size 0 bytes, dflt_noclz.o(x$fpl$dflt), UNUSED)
+
+<P><STRONG><a name="[6a5950]"></a>__dflt_normalise</STRONG> (ARM, 0 bytes, Stack size unknown bytes, dflt_noclz.o(x$fpl$dflt), UNUSED)
+
+<P><STRONG><a name="[6a7318]"></a>__aeabi_f2d</STRONG> (ARM, 0 bytes, Stack size 0 bytes, f2d.o(x$fpl$f2d))
+<BR><BR>[Called By]<UL><LI><a href="#[6ac2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displaySize
+</UL>
+
+<P><STRONG><a name="[6a72dc]"></a>_f2d</STRONG> (ARM, 96 bytes, Stack size 0 bytes, f2d.o(x$fpl$f2d), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a56bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcheck_NaN1
+<LI><a href="#[6a71b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_infinity (Weak Reference)
+</UL>
+
+<P><STRONG><a name="[6a72a0]"></a>__fpl_inf_f2d</STRONG> (ARM, 0 bytes, Stack size unknown bytes, f2d.o(x$fpl$f2d), UNUSED)
+
+<P><STRONG><a name="[6a57e8]"></a>__fpl_fcheck_NaN2</STRONG> (ARM, 8 bytes, Stack size 0 bytes, fcheck.o(x$fpl$fcheck), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a35ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_return_NaN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a55cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcmp_InfNaN
+<LI><a href="#[6a6fd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fdiv
+</UL>
+
+<P><STRONG><a name="[6a56bc]"></a>__fpl_fcheck_NaN1</STRONG> (ARM, 8 bytes, Stack size 0 bytes, fcheck1.o(x$fpl$fcheck1), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a35ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_return_NaN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a72dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
+</UL>
+
+<P><STRONG><a name="[6a700c]"></a>__aeabi_fdiv</STRONG> (ARM, 0 bytes, Stack size 4 bytes, fdiv.o(x$fpl$fdiv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_fdiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ac2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displaySize
+</UL>
+
+<P><STRONG><a name="[6a6fd0]"></a>_fdiv</STRONG> (ARM, 476 bytes, Stack size 4 bytes, fdiv.o(x$fpl$fdiv), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a57e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcheck_NaN2
+<LI><a href="#[6a71b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_infinity (Weak Reference)
+</UL>
+
+<P><STRONG><a name="[6a6f94]"></a>__fpl_inf_fdiv</STRONG> (ARM, 0 bytes, Stack size unknown bytes, fdiv.o(x$fpl$fdiv), UNUSED)
+
+<P><STRONG><a name="[6a6d3c]"></a>__aeabi_i2f</STRONG> (ARM, 0 bytes, Stack size 0 bytes, fflt_noclz.o(x$fpl$fflt), UNUSED)
+
+<P><STRONG><a name="[6a6d00]"></a>_fflt</STRONG> (ARM, 92 bytes, Stack size 0 bytes, fflt_noclz.o(x$fpl$fflt), UNUSED)
+
+<P><STRONG><a name="[6a6cc4]"></a>__fflt_normalise</STRONG> (ARM, 0 bytes, Stack size unknown bytes, fflt_noclz.o(x$fpl$fflt), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[6a6c4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ffltu
+</UL>
+
+<P><STRONG><a name="[6a6c88]"></a>__aeabi_ui2f</STRONG> (ARM, 0 bytes, Stack size 0 bytes, fflt_noclz.o(x$fpl$ffltu))
+<BR><BR>[Called By]<UL><LI><a href="#[6ac2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displaySize
+</UL>
+
+<P><STRONG><a name="[6a6c4c]"></a>_ffltu</STRONG> (ARM, 8 bytes, Stack size 0 bytes, fflt_noclz.o(x$fpl$ffltu), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a6cc4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fflt_normalise
+</UL>
+
+<P><STRONG><a name="[6a5464]"></a>__fpl_normalise2</STRONG> (ARM, 148 bytes, Stack size 0 bytes, fnorm2_noclz.o(x$fpl$fnorm2), UNUSED)
+
+<P><STRONG><a name="[2343f50]"></a>__fplib_config_pureend_doubles</STRONG> (ARM, 0 bytes, Stack size 0 bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+
+<P><STRONG><a name="[2343f14]"></a>_fp_init</STRONG> (ARM, 4 bytes, Stack size 0 bytes, fpinit.o(x$fpl$fpinit))
+<BR><BR>[Called By]<UL><LI><a href="#[6a2908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a6b5c]"></a>__aeabi_cfrcmple</STRONG> (ARM, 0 bytes, Stack size 0 bytes, frleqf.o(x$fpl$frleqf))
+<BR><BR>[Called By]<UL><LI><a href="#[6ac2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displaySize
+</UL>
+
+<P><STRONG><a name="[6a6b20]"></a>_frcmple</STRONG> (ARM, 128 bytes, Stack size 0 bytes, frleqf.o(x$fpl$frleqf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a55cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcmp_InfNaN
+</UL>
+
+<P><STRONG><a name="[6a5374]"></a>__funder</STRONG> (ARM, 144 bytes, Stack size 0 bytes, funder.o(x$fpl$funder), UNUSED)
+
+<P><STRONG><a name="[6a5338]"></a>__funder_d</STRONG> (ARM, 4 bytes, Stack size 0 bytes, funder.o(x$fpl$funder), UNUSED)
+
+<P><STRONG><a name="[6a36dc]"></a>__ieee_status</STRONG> (ARM, 8 bytes, Stack size 0 bytes, istatus.o(x$fpl$ieeestatus))
+<BR><BR>[Called By]<UL><LI><a href="#[6a63a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6a69f4]"></a>_printf_fp_dec</STRONG> (ARM, 4 bytes, Stack size 0 bytes, printf1.o(x$fpl$printf1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 320<LI>Call Chain = _printf_fp_dec &rArr; _printf_fp_dec_real &rArr; _fp_digits &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a8740]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_f
+</UL>
+
+<P><STRONG><a name="[6a35ec]"></a>__fpl_return_NaN</STRONG> (ARM, 116 bytes, Stack size 0 bytes, retnan.o(x$fpl$retnan), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a34fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_cmpreturn
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a56bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcheck_NaN1
+<LI><a href="#[6a57e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcheck_NaN2
+</UL>
+
+<P><STRONG><a name="[6a34fc]"></a>__fpl_cmpreturn</STRONG> (ARM, 60 bytes, Stack size 0 bytes, trapv.o(x$fpl$trapveneer), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[6a35ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_return_NaN
+<LI><a href="#[6a55cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcmp_InfNaN
+</UL>
+
+<P><STRONG><a name="[6a5284]"></a>__I$use$fp</STRONG> (ARM, 0 bytes, Stack size unknown bytes, usenofp.o(x$fpl$usenofp), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[6ada74]"></a>Undef_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6ada74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ada74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6ada38]"></a>SWI_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6ada38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ada38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6ad9fc]"></a>PAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6ad9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ad9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6ad9c0]"></a>DAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6ad9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ad9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6ad984]"></a>IRQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6ad984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ad984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6ad948]"></a>FIQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6ad948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6ad948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6a63a0]"></a>_fp_digits</STRONG> (Thumb, 482 bytes, Stack size 96 bytes, _printf_fp_dec.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = _fp_digits &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a36dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee_status (via Veneer)
+<LI><a href="#[6a3b14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emul (via Veneer)
+<LI><a href="#[6a3b8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_ediv (via Veneer)
+<LI><a href="#[6a3cf4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_d2e (via Veneer)
+<LI><a href="#[6a4294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
+<LI><a href="#[6a4780]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ll_udiv10 (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a6328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
+</UL>
+
+<P><STRONG><a name="[6a5fe0]"></a>_printf_input_char</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, _printf_char_common.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> _printf_char_common.o(.text)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[6a71b0]"></a>__fpl_infinity</STRONG> (Unknown, 0 bytes, Stack size 0 bytes, UNDEFINED, UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[6a55cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fcmp_InfNaN
+<LI><a href="#[6a6fd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fdiv
+<LI><a href="#[6a72dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
+</UL>
+
+<P><STRONG><a name="[6a2f20]"></a>_call_atexit_fns</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[6a2f98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[6a5cd4]"></a>_printf_mbtowc</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[6a5d88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+
+<P><STRONG><a name="[6aa2ac]"></a>_printf_truncate_signed</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[6aa360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
+</UL>
+
+<P><STRONG><a name="[6aa270]"></a>_printf_truncate_unsigned</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[6a9eb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_hex
+<LI><a href="#[6aa360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
+</UL>
+<HR></body></html>

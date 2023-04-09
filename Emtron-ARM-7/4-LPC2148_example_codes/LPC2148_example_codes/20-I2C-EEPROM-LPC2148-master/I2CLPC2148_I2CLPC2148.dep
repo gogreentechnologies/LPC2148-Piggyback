@@ -1,0 +1,27 @@
+Dependencies for Project 'I2CLPC2148', Target 'I2CLPC2148': (DO NOT MODIFY !)
+F (.\Startup.s)(0x57FFDFB2)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips--pd "__UVISION_VERSION SETA 517"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\I2C.c)(0x57FFDFB2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="517"-o .\i2c.o --omf_browse .\i2c.crf --depend .\i2c.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214X.H)(0x559DBC08)
+I (C:\Keil_v5\ARM\ARMCC\include\Stdio.h)(0x55DC0C76)
+I (Type.h)(0x57FFDFB2)
+I (I2C.h)(0x57FFDFB2)
+I (TIMER.h)(0x57FFDFB2)
+F (.\main.c)(0x57FFDFB2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="517"-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214X.H)(0x559DBC08)
+I (C:\Keil_v5\ARM\ARMCC\include\Stdio.h)(0x55DC0C76)
+I (Type.h)(0x57FFDFB2)
+I (uart.h)(0x57FFDFB2)
+I (I2C.h)(0x57FFDFB2)
+I (TIMER.h)(0x57FFDFB2)
+F (.\timer.c)(0x57FFDFB2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="517"-o .\timer.o --omf_browse .\timer.crf --depend .\timer.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214X.H)(0x559DBC08)
+I (Type.h)(0x57FFDFB2)
+I (Timer.h)(0x57FFDFB2)
+F (.\uart.c)(0x57FFDFB2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="517"-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC21xx.h)(0x559DBC08)
+I (TYPE.h)(0x57FFDFB2)
+I (UART.h)(0x57FFDFB2)
+F (.\I2C.h)(0x57FFDFB2)()
+F (.\timer.h)(0x57FFDFB2)()
+F (.\type.h)(0x57FFDFB2)()
+F (.\uart.h)(0x57FFDFB2)()

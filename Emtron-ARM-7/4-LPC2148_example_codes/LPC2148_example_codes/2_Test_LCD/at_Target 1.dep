@@ -1,0 +1,7 @@
+Dependencies for Project 'at', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4BB1C206)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\gsmAT.c)(0x55C0C02F)(-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "gsmat.o" --omf_browse "gsmat.crf" --depend "gsmat.d")
+I (C:\Keil\ARM\INC\Philips\lpc214x.h)(0x4A02A636)
+I (lcd.h)(0x543B5A2C)
+F (.\lcd.c)(0x54422B68)(-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "lcd.o" --omf_browse "lcd.crf" --depend "lcd.d")
+I (C:\Keil\ARM\Inc\Philips\lpc214X.h)(0x4A02A636)

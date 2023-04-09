@@ -1,0 +1,19 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Passport\2_D_Drive_Embedded_PC\7_EmbeddedLAb20.com\Kits\Emtron_ARM_Kit\LPC2148_example_codes\LPC2148_example_codes\4_DAC\at.uvproj
+Project File Date:  08/05/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling gsmAT.c...
+gsmAT.c(17): warning:  #223-D: function "lcd_clear" declared implicitly
+gsmAT.c(9): warning:  #177-D: variable "buf" was declared but never referenced
+compiling lcd.c...
+linking...
+Program Size: Code=10032 RO-data=296 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"at.axf" - 0 Error(s), 2 Warning(s).
